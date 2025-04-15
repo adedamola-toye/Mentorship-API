@@ -1,0 +1,37 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.17.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\Documents\Github\RiseAcademy Backend\mentorship_API\.npmrc
+5 silly config load:file:C:\Users\hussa\.npmrc
+6 silly config load:file:C:\Users\hussa\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install nodemon
+8 verbose argv "install" "nodemon" "--save-dev"
+9 verbose logfile logs-max:10 dir:D:\Documents\Github\RiseAcademy Backend\mentorship_API\npm-cache\_logs\2025-04-14T15_35_51_157Z-
+10 verbose logfile D:\Documents\Github\RiseAcademy Backend\mentorship_API\npm-cache\_logs\2025-04-14T15_35_51_157Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile done cleaning log files
+13 verbose stack JSONParseError: Expected double-quoted property name in JSON at position 240 while parsing near "...demon server.js\",\n  },\n  \"dependencies\":..."
+13 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\read-package-json-fast\lib\index.js:7:61
+13 verbose stack     at async #initTree (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:265:21)
+13 verbose stack     at async Arborist.buildIdealTree (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\build-ideal-tree.js:178:7)
+13 verbose stack     at async Promise.all (index 1)
+13 verbose stack     at async Arborist.reify (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\reify.js:131:5)
+13 verbose stack     at async Install.exec (C:\Program Files\nodejs\node_modules\npm\lib\commands\install.js:150:5)
+13 verbose stack     at async Npm.exec (C:\Program Files\nodejs\node_modules\npm\lib\npm.js:207:9)
+13 verbose stack     at async module.exports (C:\Program Files\nodejs\node_modules\npm\lib\cli\entry.js:74:5)
+14 error code EJSONPARSE
+15 error path D:\Documents\Github\RiseAcademy Backend\mentorship_API/package.json
+16 error JSON.parse Expected double-quoted property name in JSON at position 240 while parsing near "...demon server.js\",\n  },\n  \"dependencies\":..."
+17 error JSON.parse Failed to parse JSON data.
+17 error JSON.parse Note: package.json must be actual JSON, not just JavaScript.
+18 silly unfinished npm timer reify 1744644952448
+19 silly unfinished npm timer reify:loadTrees 1744644952464
+20 silly unfinished npm timer idealTree:init 1744644952465
+21 verbose cwd D:\Documents\Github\RiseAcademy Backend\mentorship_API
+22 verbose os Windows_NT 10.0.22000
+23 verbose node v20.17.0
+24 verbose npm  v10.8.2
+25 verbose exit 1
+26 verbose code 1
+27 error A complete log of this run can be found in: D:\Documents\Github\RiseAcademy Backend\mentorship_API\npm-cache\_logs\2025-04-14T15_35_51_157Z-debug-0.log

@@ -1,0 +1,953 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.17.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\Documents\Github\RiseAcademy Backend\mentorship_API\.npmrc
+5 silly config load:file:C:\Users\hussa\.npmrc
+6 silly config load:file:C:\Users\hussa\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm install bcrypt
+8 verbose argv "install" "bcrypt"
+9 verbose logfile logs-max:10 dir:D:\Documents\Github\RiseAcademy Backend\mentorship_API\npm-cache\_logs\2025-04-14T16_34_18_856Z-
+10 verbose logfile D:\Documents\Github\RiseAcademy Backend\mentorship_API\npm-cache\_logs\2025-04-14T16_34_18_856Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile done cleaning log files
+13 silly idealTree buildDeps
+14 silly fetch manifest bcrypt@*
+15 silly packumentCache full:https://registry.npmjs.org/bcrypt cache-miss
+16 http fetch GET 200 https://registry.npmjs.org/bcrypt 1348ms (cache miss)
+17 silly packumentCache full:https://registry.npmjs.org/bcrypt set size:undefined disposed:false
+18 silly placeDep ROOT bcrypt@5.1.1 OK for: mentorship-api@1.0.0 want: *
+19 silly fetch manifest node-addon-api@^5.0.0
+20 silly packumentCache full:https://registry.npmjs.org/node-addon-api cache-miss
+21 silly fetch manifest @mapbox/node-pre-gyp@^1.0.11
+22 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fnode-pre-gyp cache-miss
+23 http fetch GET 200 https://registry.npmjs.org/node-addon-api 509ms (cache miss)
+24 silly packumentCache full:https://registry.npmjs.org/node-addon-api set size:undefined disposed:false
+25 http fetch GET 200 https://registry.npmjs.org/@mapbox%2fnode-pre-gyp 1132ms (cache miss)
+26 silly packumentCache full:https://registry.npmjs.org/@mapbox%2fnode-pre-gyp set size:undefined disposed:false
+27 silly placeDep ROOT @mapbox/node-pre-gyp@1.0.11 OK for: bcrypt@5.1.1 want: ^1.0.11
+28 silly placeDep ROOT node-addon-api@5.1.0 OK for: bcrypt@5.1.1 want: ^5.0.0
+29 silly fetch manifest tar@^6.1.11
+30 silly packumentCache full:https://registry.npmjs.org/tar cache-miss
+31 silly fetch manifest nopt@^5.0.0
+32 silly packumentCache full:https://registry.npmjs.org/nopt cache-miss
+33 silly fetch manifest npmlog@^5.0.1
+34 silly packumentCache full:https://registry.npmjs.org/npmlog cache-miss
+35 silly fetch manifest rimraf@^3.0.2
+36 silly packumentCache full:https://registry.npmjs.org/rimraf cache-miss
+37 silly fetch manifest make-dir@^3.1.0
+38 silly packumentCache full:https://registry.npmjs.org/make-dir cache-miss
+39 silly fetch manifest node-fetch@^2.6.7
+40 silly packumentCache full:https://registry.npmjs.org/node-fetch cache-miss
+41 silly fetch manifest detect-libc@^2.0.0
+42 silly packumentCache full:https://registry.npmjs.org/detect-libc cache-miss
+43 silly fetch manifest https-proxy-agent@^5.0.0
+44 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent cache-miss
+45 http fetch GET 200 https://registry.npmjs.org/nopt 228ms (cache miss)
+46 silly packumentCache full:https://registry.npmjs.org/nopt set size:undefined disposed:false
+47 http fetch GET 200 https://registry.npmjs.org/tar 430ms (cache miss)
+48 silly packumentCache full:https://registry.npmjs.org/tar set size:undefined disposed:false
+49 http fetch GET 200 https://registry.npmjs.org/detect-libc 801ms (cache miss)
+50 silly packumentCache full:https://registry.npmjs.org/detect-libc set size:undefined disposed:false
+51 http fetch GET 200 https://registry.npmjs.org/rimraf 866ms (cache miss)
+52 silly packumentCache full:https://registry.npmjs.org/rimraf set size:undefined disposed:false
+53 http fetch GET 200 https://registry.npmjs.org/npmlog 892ms (cache miss)
+54 silly packumentCache full:https://registry.npmjs.org/npmlog set size:undefined disposed:false
+55 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent 1096ms (cache miss)
+56 silly packumentCache full:https://registry.npmjs.org/https-proxy-agent set size:undefined disposed:false
+57 http fetch GET 200 https://registry.npmjs.org/make-dir 1103ms (cache miss)
+58 silly packumentCache full:https://registry.npmjs.org/make-dir set size:undefined disposed:false
+59 http fetch GET 200 https://registry.npmjs.org/node-fetch 1418ms (cache miss)
+60 silly packumentCache full:https://registry.npmjs.org/node-fetch set size:undefined disposed:false
+61 silly fetch manifest encoding@^0.1.0
+62 silly packumentCache full:https://registry.npmjs.org/encoding cache-miss
+63 http fetch GET 200 https://registry.npmjs.org/encoding 657ms (cache miss)
+64 silly packumentCache full:https://registry.npmjs.org/encoding set size:undefined disposed:false
+65 silly placeDep ROOT detect-libc@2.0.3 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^2.0.0
+66 silly placeDep ROOT https-proxy-agent@5.0.1 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^5.0.0
+67 silly placeDep ROOT make-dir@3.1.0 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^3.1.0
+68 silly placeDep ROOT node-fetch@2.7.0 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^2.6.7
+69 silly placeDep ROOT nopt@5.0.0 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^5.0.0
+70 silly placeDep ROOT npmlog@5.0.1 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^5.0.1
+71 silly placeDep ROOT rimraf@3.0.2 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^3.0.2
+72 silly placeDep ROOT tar@6.2.1 OK for: @mapbox/node-pre-gyp@1.0.11 want: ^6.1.11
+73 silly fetch manifest debug@4
+74 silly packumentCache full:https://registry.npmjs.org/debug cache-miss
+75 silly fetch manifest agent-base@6
+76 silly packumentCache full:https://registry.npmjs.org/agent-base cache-miss
+77 silly fetch manifest semver@^6.0.0
+78 silly packumentCache full:https://registry.npmjs.org/semver cache-miss
+79 silly fetch manifest whatwg-url@^5.0.0
+80 silly packumentCache full:https://registry.npmjs.org/whatwg-url cache-miss
+81 silly fetch manifest abbrev@1
+82 silly packumentCache full:https://registry.npmjs.org/abbrev cache-miss
+83 silly fetch manifest gauge@^3.0.0
+84 silly packumentCache full:https://registry.npmjs.org/gauge cache-miss
+85 silly fetch manifest set-blocking@^2.0.0
+86 silly packumentCache full:https://registry.npmjs.org/set-blocking cache-miss
+87 silly fetch manifest are-we-there-yet@^2.0.0
+88 silly packumentCache full:https://registry.npmjs.org/are-we-there-yet cache-miss
+89 silly fetch manifest console-control-strings@^1.1.0
+90 silly packumentCache full:https://registry.npmjs.org/console-control-strings cache-miss
+91 silly fetch manifest glob@^7.1.3
+92 silly packumentCache full:https://registry.npmjs.org/glob cache-miss
+93 silly fetch manifest chownr@^2.0.0
+94 silly packumentCache full:https://registry.npmjs.org/chownr cache-miss
+95 http fetch GET 200 https://registry.npmjs.org/whatwg-url 384ms (cache miss)
+96 silly packumentCache full:https://registry.npmjs.org/whatwg-url set size:undefined disposed:false
+97 silly fetch manifest mkdirp@^1.0.3
+98 silly packumentCache full:https://registry.npmjs.org/mkdirp cache-miss
+99 http fetch GET 200 https://registry.npmjs.org/agent-base 492ms (cache miss)
+100 silly packumentCache full:https://registry.npmjs.org/agent-base set size:undefined disposed:false
+101 silly fetch manifest yallist@^4.0.0
+102 silly packumentCache full:https://registry.npmjs.org/yallist cache-miss
+103 http fetch GET 200 https://registry.npmjs.org/console-control-strings 590ms (cache miss)
+104 silly packumentCache full:https://registry.npmjs.org/console-control-strings set size:undefined disposed:false
+105 silly fetch manifest minipass@^5.0.0
+106 silly packumentCache full:https://registry.npmjs.org/minipass cache-miss
+107 http fetch GET 200 https://registry.npmjs.org/abbrev 651ms (cache miss)
+108 silly packumentCache full:https://registry.npmjs.org/abbrev set size:undefined disposed:false
+109 silly fetch manifest minizlib@^2.1.1
+110 silly packumentCache full:https://registry.npmjs.org/minizlib cache-miss
+111 http fetch GET 200 https://registry.npmjs.org/set-blocking 797ms (cache miss)
+112 silly packumentCache full:https://registry.npmjs.org/set-blocking set size:undefined disposed:false
+113 silly fetch manifest fs-minipass@^2.0.0
+114 silly packumentCache full:https://registry.npmjs.org/fs-minipass cache-miss
+115 http fetch GET 200 https://registry.npmjs.org/gauge 1086ms (cache miss)
+116 silly packumentCache full:https://registry.npmjs.org/gauge set size:undefined disposed:false
+117 http fetch GET 200 https://registry.npmjs.org/are-we-there-yet 1263ms (cache miss)
+118 silly packumentCache full:https://registry.npmjs.org/are-we-there-yet set size:undefined disposed:false
+119 http fetch GET 200 https://registry.npmjs.org/mkdirp 1236ms (cache updated)
+120 silly packumentCache full:https://registry.npmjs.org/mkdirp set size:undefined disposed:false
+121 http fetch GET 200 https://registry.npmjs.org/yallist 1247ms (cache miss)
+122 silly packumentCache full:https://registry.npmjs.org/yallist set size:undefined disposed:false
+123 http fetch GET 200 https://registry.npmjs.org/minipass 1774ms (cache miss)
+124 silly packumentCache full:https://registry.npmjs.org/minipass set size:undefined disposed:false
+125 http fetch GET 200 https://registry.npmjs.org/glob 2635ms (cache miss)
+126 silly packumentCache full:https://registry.npmjs.org/glob set size:undefined disposed:false
+127 http fetch GET 200 https://registry.npmjs.org/minizlib 2043ms (cache miss)
+128 silly packumentCache full:https://registry.npmjs.org/minizlib set size:undefined disposed:false
+129 http fetch GET 200 https://registry.npmjs.org/fs-minipass 1945ms (cache miss)
+130 silly packumentCache full:https://registry.npmjs.org/fs-minipass set size:undefined disposed:false
+131 http fetch GET 200 https://registry.npmjs.org/chownr 3817ms (cache miss)
+132 silly packumentCache full:https://registry.npmjs.org/chownr set size:undefined disposed:false
+133 http fetch GET 200 https://registry.npmjs.org/debug 3865ms (cache updated)
+134 silly packumentCache full:https://registry.npmjs.org/debug set size:undefined disposed:false
+135 http fetch GET 200 https://registry.npmjs.org/semver 4175ms (cache updated)
+136 silly packumentCache full:https://registry.npmjs.org/semver set size:undefined disposed:false
+137 silly placeDep ROOT agent-base@6.0.2 OK for: https-proxy-agent@5.0.1 want: 6
+138 silly placeDep node_modules/https-proxy-agent debug@4.4.0 OK for: https-proxy-agent@5.0.1 want: 4
+139 silly fetch manifest ms@^2.1.3
+140 silly packumentCache full:https://registry.npmjs.org/ms cache-miss
+141 http fetch GET 200 https://registry.npmjs.org/ms 376ms (cache updated)
+142 silly packumentCache full:https://registry.npmjs.org/ms set size:undefined disposed:false
+143 silly placeDep node_modules/agent-base debug@4.4.0 OK for: agent-base@6.0.2 want: 4
+144 silly placeDep node_modules/make-dir semver@6.3.1 OK for: make-dir@3.1.0 want: ^6.0.0
+145 silly placeDep ROOT whatwg-url@5.0.0 OK for: node-fetch@2.7.0 want: ^5.0.0
+146 silly fetch manifest tr46@~0.0.3
+147 silly packumentCache full:https://registry.npmjs.org/tr46 cache-miss
+148 silly fetch manifest webidl-conversions@^3.0.0
+149 silly packumentCache full:https://registry.npmjs.org/webidl-conversions cache-miss
+150 http fetch GET 200 https://registry.npmjs.org/tr46 307ms (cache miss)
+151 silly packumentCache full:https://registry.npmjs.org/tr46 set size:undefined disposed:false
+152 http fetch GET 200 https://registry.npmjs.org/webidl-conversions 322ms (cache miss)
+153 silly packumentCache full:https://registry.npmjs.org/webidl-conversions set size:undefined disposed:false
+154 silly placeDep ROOT abbrev@1.1.1 OK for: nopt@5.0.0 want: 1
+155 silly placeDep ROOT are-we-there-yet@2.0.0 OK for: npmlog@5.0.1 want: ^2.0.0
+156 silly placeDep ROOT console-control-strings@1.1.0 OK for: npmlog@5.0.1 want: ^1.1.0
+157 silly placeDep ROOT gauge@3.0.2 OK for: npmlog@5.0.1 want: ^3.0.0
+158 silly placeDep ROOT set-blocking@2.0.0 OK for: npmlog@5.0.1 want: ^2.0.0
+159 silly fetch manifest delegates@^1.0.0
+160 silly packumentCache full:https://registry.npmjs.org/delegates cache-miss
+161 silly fetch manifest readable-stream@^3.6.0
+162 silly packumentCache full:https://registry.npmjs.org/readable-stream cache-miss
+163 silly fetch manifest aproba@^1.0.3 || ^2.0.0
+164 silly packumentCache full:https://registry.npmjs.org/aproba cache-miss
+165 silly fetch manifest strip-ansi@^6.0.1
+166 silly packumentCache full:https://registry.npmjs.org/strip-ansi cache-miss
+167 silly fetch manifest wide-align@^1.1.2
+168 silly packumentCache full:https://registry.npmjs.org/wide-align cache-miss
+169 silly fetch manifest has-unicode@^2.0.1
+170 silly packumentCache full:https://registry.npmjs.org/has-unicode cache-miss
+171 silly fetch manifest signal-exit@^3.0.0
+172 silly packumentCache full:https://registry.npmjs.org/signal-exit cache-miss
+173 silly fetch manifest string-width@^4.2.3
+174 silly packumentCache full:https://registry.npmjs.org/string-width cache-miss
+175 silly fetch manifest color-support@^1.1.2
+176 silly packumentCache full:https://registry.npmjs.org/color-support cache-miss
+177 silly fetch manifest object-assign@^4.1.1
+178 silly packumentCache full:https://registry.npmjs.org/object-assign cache-miss
+179 http fetch GET 200 https://registry.npmjs.org/aproba 450ms (cache miss)
+180 silly packumentCache full:https://registry.npmjs.org/aproba set size:undefined disposed:false
+181 http fetch GET 200 https://registry.npmjs.org/strip-ansi 593ms (cache miss)
+182 silly packumentCache full:https://registry.npmjs.org/strip-ansi set size:undefined disposed:false
+183 http fetch GET 200 https://registry.npmjs.org/delegates 723ms (cache miss)
+184 silly packumentCache full:https://registry.npmjs.org/delegates set size:undefined disposed:false
+185 http fetch GET 200 https://registry.npmjs.org/readable-stream 764ms (cache miss)
+186 silly packumentCache full:https://registry.npmjs.org/readable-stream set size:undefined disposed:false
+187 http fetch GET 200 https://registry.npmjs.org/has-unicode 789ms (cache miss)
+188 silly packumentCache full:https://registry.npmjs.org/has-unicode set size:undefined disposed:false
+189 http fetch GET 200 https://registry.npmjs.org/color-support 807ms (cache miss)
+190 silly packumentCache full:https://registry.npmjs.org/color-support set size:undefined disposed:false
+191 http fetch GET 200 https://registry.npmjs.org/wide-align 846ms (cache miss)
+192 silly packumentCache full:https://registry.npmjs.org/wide-align set size:undefined disposed:false
+193 http fetch GET 200 https://registry.npmjs.org/signal-exit 981ms (cache miss)
+194 silly packumentCache full:https://registry.npmjs.org/signal-exit set size:undefined disposed:false
+195 http fetch GET 200 https://registry.npmjs.org/object-assign 1064ms (cache miss)
+196 silly packumentCache full:https://registry.npmjs.org/object-assign set size:undefined disposed:false
+197 http fetch GET 200 https://registry.npmjs.org/string-width 1083ms (cache miss)
+198 silly packumentCache full:https://registry.npmjs.org/string-width set size:undefined disposed:false
+199 silly placeDep ROOT delegates@1.0.0 OK for: are-we-there-yet@2.0.0 want: ^1.0.0
+200 silly placeDep ROOT readable-stream@3.6.2 OK for: are-we-there-yet@2.0.0 want: ^3.6.0
+201 silly fetch manifest string_decoder@^1.1.1
+202 silly packumentCache full:https://registry.npmjs.org/string_decoder cache-miss
+203 silly fetch manifest util-deprecate@^1.0.1
+204 silly packumentCache full:https://registry.npmjs.org/util-deprecate cache-miss
+205 http fetch GET 200 https://registry.npmjs.org/util-deprecate 525ms (cache miss)
+206 silly packumentCache full:https://registry.npmjs.org/util-deprecate set size:undefined disposed:false
+207 http fetch GET 200 https://registry.npmjs.org/string_decoder 530ms (cache miss)
+208 silly packumentCache full:https://registry.npmjs.org/string_decoder set size:undefined disposed:false
+209 silly placeDep ROOT aproba@2.0.0 OK for: gauge@3.0.2 want: ^1.0.3 || ^2.0.0
+210 silly placeDep ROOT color-support@1.1.3 OK for: gauge@3.0.2 want: ^1.1.2
+211 silly placeDep ROOT has-unicode@2.0.1 OK for: gauge@3.0.2 want: ^2.0.1
+212 silly placeDep ROOT object-assign@4.1.1 OK for: gauge@3.0.2 want: ^4.1.1
+213 silly placeDep ROOT signal-exit@3.0.7 OK for: gauge@3.0.2 want: ^3.0.0
+214 silly placeDep ROOT string-width@4.2.3 OK for: gauge@3.0.2 want: ^4.2.3
+215 silly placeDep ROOT strip-ansi@6.0.1 OK for: gauge@3.0.2 want: ^6.0.1
+216 silly placeDep ROOT wide-align@1.1.5 OK for: gauge@3.0.2 want: ^1.1.2
+217 silly fetch manifest emoji-regex@^8.0.0
+218 silly packumentCache full:https://registry.npmjs.org/emoji-regex cache-miss
+219 silly fetch manifest is-fullwidth-code-point@^3.0.0
+220 silly packumentCache full:https://registry.npmjs.org/is-fullwidth-code-point cache-miss
+221 silly fetch manifest ansi-regex@^5.0.1
+222 silly packumentCache full:https://registry.npmjs.org/ansi-regex cache-miss
+223 http fetch GET 200 https://registry.npmjs.org/emoji-regex 278ms (cache miss)
+224 silly packumentCache full:https://registry.npmjs.org/emoji-regex set size:undefined disposed:false
+225 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point 285ms (cache miss)
+226 silly packumentCache full:https://registry.npmjs.org/is-fullwidth-code-point set size:undefined disposed:false
+227 http fetch GET 200 https://registry.npmjs.org/ansi-regex 363ms (cache miss)
+228 silly packumentCache full:https://registry.npmjs.org/ansi-regex set size:undefined disposed:false
+229 silly placeDep ROOT string_decoder@1.3.0 OK for: readable-stream@3.6.2 want: ^1.1.1
+230 silly placeDep ROOT util-deprecate@1.0.2 OK for: readable-stream@3.6.2 want: ^1.0.1
+231 silly fetch manifest safe-buffer@~5.2.0
+232 silly packumentCache full:https://registry.npmjs.org/safe-buffer cache-miss
+233 http fetch GET 200 https://registry.npmjs.org/safe-buffer 325ms (cache updated)
+234 silly packumentCache full:https://registry.npmjs.org/safe-buffer set size:undefined disposed:false
+235 silly placeDep ROOT glob@7.2.3 OK for: rimraf@3.0.2 want: ^7.1.3
+236 silly fetch manifest once@^1.3.0
+237 silly packumentCache full:https://registry.npmjs.org/once cache-miss
+238 silly fetch manifest inflight@^1.0.4
+239 silly packumentCache full:https://registry.npmjs.org/inflight cache-miss
+240 silly fetch manifest fs.realpath@^1.0.0
+241 silly packumentCache full:https://registry.npmjs.org/fs.realpath cache-miss
+242 silly fetch manifest path-is-absolute@^1.0.0
+243 silly packumentCache full:https://registry.npmjs.org/path-is-absolute cache-miss
+244 http fetch GET 200 https://registry.npmjs.org/path-is-absolute 381ms (cache miss)
+245 silly packumentCache full:https://registry.npmjs.org/path-is-absolute set size:undefined disposed:false
+246 http fetch GET 200 https://registry.npmjs.org/once 391ms (cache miss)
+247 silly packumentCache full:https://registry.npmjs.org/once set size:undefined disposed:false
+248 http fetch GET 200 https://registry.npmjs.org/inflight 392ms (cache miss)
+249 silly packumentCache full:https://registry.npmjs.org/inflight set size:undefined disposed:false
+250 http fetch GET 200 https://registry.npmjs.org/fs.realpath 392ms (cache miss)
+251 silly packumentCache full:https://registry.npmjs.org/fs.realpath set size:undefined disposed:false
+252 silly placeDep ROOT fs.realpath@1.0.0 OK for: glob@7.2.3 want: ^1.0.0
+253 silly placeDep ROOT inflight@1.0.6 OK for: glob@7.2.3 want: ^1.0.4
+254 silly placeDep ROOT once@1.4.0 OK for: glob@7.2.3 want: ^1.3.0
+255 silly placeDep ROOT path-is-absolute@1.0.1 OK for: glob@7.2.3 want: ^1.0.0
+256 silly fetch manifest wrappy@1
+257 silly packumentCache full:https://registry.npmjs.org/wrappy cache-miss
+258 silly fetch manifest wrappy@1
+259 silly packumentCache full:https://registry.npmjs.org/wrappy cache-miss
+260 http fetch GET 200 https://registry.npmjs.org/wrappy 203ms (cache miss)
+261 silly packumentCache full:https://registry.npmjs.org/wrappy set size:undefined disposed:false
+262 http fetch GET 200 https://registry.npmjs.org/wrappy 286ms (cache miss)
+263 silly packumentCache full:https://registry.npmjs.org/wrappy set size:undefined disposed:false
+264 silly placeDep ROOT wrappy@1.0.2 OK for: inflight@1.0.6 want: 1
+265 silly placeDep node_modules/string_decoder safe-buffer@5.2.1 OK for: string_decoder@1.3.0 want: ~5.2.0
+266 silly placeDep ROOT emoji-regex@8.0.0 OK for: string-width@4.2.3 want: ^8.0.0
+267 silly placeDep ROOT is-fullwidth-code-point@3.0.0 OK for: string-width@4.2.3 want: ^3.0.0
+268 silly placeDep ROOT ansi-regex@5.0.1 OK for: strip-ansi@6.0.1 want: ^5.0.1
+269 silly placeDep ROOT chownr@2.0.0 OK for: tar@6.2.1 want: ^2.0.0
+270 silly placeDep ROOT fs-minipass@2.1.0 OK for: tar@6.2.1 want: ^2.0.0
+271 silly placeDep ROOT minipass@5.0.0 OK for: tar@6.2.1 want: ^5.0.0
+272 silly placeDep ROOT minizlib@2.1.2 OK for: tar@6.2.1 want: ^2.1.1
+273 silly placeDep node_modules/tar mkdirp@1.0.4 OK for: tar@6.2.1 want: ^1.0.3
+274 silly placeDep ROOT yallist@4.0.0 OK for: tar@6.2.1 want: ^4.0.0
+275 silly fetch manifest minipass@^3.0.0
+276 silly packumentCache full:https://registry.npmjs.org/minipass cache-miss
+277 silly fetch manifest minipass@^3.0.0
+278 silly packumentCache full:https://registry.npmjs.org/minipass cache-miss
+279 http fetch GET 200 https://registry.npmjs.org/minipass 21ms (cache hit)
+280 silly packumentCache full:https://registry.npmjs.org/minipass set size:490195 disposed:false
+281 http fetch GET 200 https://registry.npmjs.org/minipass 38ms (cache hit)
+282 silly packumentCache full:https://registry.npmjs.org/minipass set size:490195 disposed:false
+283 silly packumentCache full:https://registry.npmjs.org/minipass dispose
+284 silly placeDep node_modules/fs-minipass minipass@3.3.6 OK for: fs-minipass@2.1.0 want: ^3.0.0
+285 silly placeDep node_modules/minizlib minipass@3.3.6 OK for: minizlib@2.1.2 want: ^3.0.0
+286 silly placeDep ROOT tr46@0.0.3 OK for: whatwg-url@5.0.0 want: ~0.0.3
+287 silly placeDep ROOT webidl-conversions@3.0.1 OK for: whatwg-url@5.0.0 want: ^3.0.0
+288 silly placeDep node_modules/agent-base ms@2.1.3 OK for: debug@4.4.0 want: ^2.1.3
+289 silly placeDep node_modules/https-proxy-agent ms@2.1.3 OK for: debug@4.4.0 want: ^2.1.3
+290 silly reify mark retired [
+290 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\acorn',
+290 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\acorn',
+290 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\acorn.cmd',
+290 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\acorn.ps1'
+290 silly reify ]
+291 silly reify mark retired [
+291 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\acorn-globals'
+291 silly reify ]
+292 silly reify mark retired [
+292 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\align-text'
+292 silly reify ]
+293 silly reify mark retired [
+293 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\amdefine'
+293 silly reify ]
+294 silly reify mark retired [
+294 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\asap'
+294 silly reify ]
+295 silly reify mark retired [
+295 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\basic-auth'
+295 silly reify ]
+296 silly reify mark retired [
+296 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\camelcase'
+296 silly reify ]
+297 silly reify mark retired [
+297 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\center-align'
+297 silly reify ]
+298 silly reify mark retired [
+298 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\character-parser'
+298 silly reify ]
+299 silly reify mark retired [
+299 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\clean-css',
+299 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\cleancss',
+299 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\cleancss.cmd',
+299 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\cleancss.ps1'
+299 silly reify ]
+300 silly reify mark retired [
+300 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\cliui'
+300 silly reify ]
+301 silly reify mark retired [
+301 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\commander'
+301 silly reify ]
+302 silly reify mark retired [
+302 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\constantinople'
+302 silly reify ]
+303 silly reify mark retired [
+303 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\cookie'
+303 silly reify ]
+304 silly reify mark retired [
+304 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\cookie-parser'
+304 silly reify ]
+305 silly reify mark retired [
+305 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\css'
+305 silly reify ]
+306 silly reify mark retired [
+306 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\css-parse'
+306 silly reify ]
+307 silly reify mark retired [
+307 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\css-stringify'
+307 silly reify ]
+308 silly reify mark retired [
+308 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\decamelize'
+308 silly reify ]
+309 silly reify mark retired [
+309 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\graceful-readlink'
+309 silly reify ]
+310 silly reify mark retired [
+310 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\is-buffer'
+310 silly reify ]
+311 silly reify mark retired [
+311 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\is-promise'
+311 silly reify ]
+312 silly reify mark retired [
+312 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\jade',
+312 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\jade',
+312 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\jade.cmd',
+312 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\jade.ps1'
+312 silly reify ]
+313 silly reify mark retired [
+313 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\jstransformer'
+313 silly reify ]
+314 silly reify mark retired [
+314 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\kind-of'
+314 silly reify ]
+315 silly reify mark retired [
+315 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\lazy-cache'
+315 silly reify ]
+316 silly reify mark retired [
+316 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\longest'
+316 silly reify ]
+317 silly reify mark retired [
+317 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\minimist'
+317 silly reify ]
+318 silly reify mark retired [
+318 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\mkdirp',
+318 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\mkdirp',
+318 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\mkdirp.cmd',
+318 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\mkdirp.ps1'
+318 silly reify ]
+319 silly reify mark retired [
+319 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\morgan'
+319 silly reify ]
+320 silly reify mark retired [
+320 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\on-headers'
+320 silly reify ]
+321 silly reify mark retired [
+321 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\optimist'
+321 silly reify ]
+322 silly reify mark retired [
+322 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\promise'
+322 silly reify ]
+323 silly reify mark retired [
+323 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\repeat-string'
+323 silly reify ]
+324 silly reify mark retired [
+324 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\right-align'
+324 silly reify ]
+325 silly reify mark retired [
+325 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\source-map'
+325 silly reify ]
+326 silly reify mark retired [
+326 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\transformers'
+326 silly reify ]
+327 silly reify mark retired [
+327 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\uglify-js',
+327 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\uglifyjs',
+327 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\uglifyjs.cmd',
+327 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\uglifyjs.ps1'
+327 silly reify ]
+328 silly reify mark retired [
+328 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\uglify-to-browserify'
+328 silly reify ]
+329 silly reify mark retired [
+329 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\void-elements'
+329 silly reify ]
+330 silly reify mark retired [
+330 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\window-size'
+330 silly reify ]
+331 silly reify mark retired [
+331 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\with'
+331 silly reify ]
+332 silly reify mark retired [
+332 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\wordwrap'
+332 silly reify ]
+333 silly reify mark retired [
+333 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\yargs'
+333 silly reify ]
+334 silly reify moves {
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\acorn': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.acorn-63dyHaKp',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\acorn': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.acorn-eZ62tAwU',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\acorn.cmd': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.acorn.cmd-mEg1upu1',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\acorn.ps1': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.acorn.ps1-9fq7Tc03',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\acorn-globals': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.acorn-globals-UAQqI8bE',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\align-text': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.align-text-rCMbb2wO',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\amdefine': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.amdefine-FmnYVUSA',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\asap': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.asap-IxnKtbzx',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\basic-auth': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.basic-auth-dEwTCYoi',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\camelcase': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.camelcase-BRRDLfCD',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\center-align': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.center-align-CzuJALJ0',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\character-parser': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.character-parser-wEtXdHr2',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\clean-css': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.clean-css-eR3Wsgfl',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\cleancss': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.cleancss-XFlf49As',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\cleancss.cmd': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.cleancss.cmd-STu8c0Ug',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\cleancss.ps1': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.cleancss.ps1-Tt3bNkGn',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\cliui': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.cliui-ggtTZ6b1',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\commander': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.commander-WmpNIBiF',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\constantinople': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.constantinople-De21pmCp',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\cookie': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.cookie-dnzpLQmS',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\cookie-parser': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.cookie-parser-NVMY4ksS',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\css': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.css-slLVXoF6',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\css-parse': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.css-parse-VcfjjgNL',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\css-stringify': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.css-stringify-xlIqG1So',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\decamelize': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.decamelize-Frd1d5ze',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\graceful-readlink': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.graceful-readlink-xUuCsBKi',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\is-buffer': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.is-buffer-7Ui5Ripi',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\is-promise': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.is-promise-5MsyIQGr',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\jade': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.jade-CzeiGgXZ',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\jade': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.jade-X9SFMy4X',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\jade.cmd': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.jade.cmd-f1mmUcbU',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\jade.ps1': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.jade.ps1-cM8xqq8O',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\jstransformer': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.jstransformer-M3X38qc9',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\kind-of': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.kind-of-aagspjG0',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\lazy-cache': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.lazy-cache-cpEgznMD',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\longest': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.longest-55tgqji8',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\minimist': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.minimist-S9XjSU7a',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\mkdirp': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.mkdirp-VqnDTyJg',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\mkdirp': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.mkdirp-uP4XZ51d',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\mkdirp.cmd': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.mkdirp.cmd-wALllScY',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\mkdirp.ps1': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.mkdirp.ps1-HSloTVJp',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\morgan': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.morgan-Q0kfTFSm',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\on-headers': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.on-headers-VHqXrwkb',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\optimist': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.optimist-sfFhI11t',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\promise': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.promise-4FqZaz7V',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\repeat-string': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.repeat-string-jMUoe30C',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\right-align': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.right-align-5kgnCAS4',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\source-map': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.source-map-I4Dv6y2q',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\transformers': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.transformers-FJbbhRct',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\uglify-js': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.uglify-js-2RB7gSgd',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\uglifyjs': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.uglifyjs-KxsgOJkx',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\uglifyjs.cmd': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.uglifyjs.cmd-B6vchvjT',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\uglifyjs.ps1': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.bin\\.uglifyjs.ps1-DfWSnMuj',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\uglify-to-browserify': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.uglify-to-browserify-6yp8cwgl',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\void-elements': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.void-elements-PmVqsom4',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\window-size': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.window-size-tasFXotz',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\with': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.with-iPpQjKFh',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\wordwrap': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.wordwrap-DCAVlENK',
+334 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\yargs': 'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\.yargs-FQ0Uwrs8'
+334 silly reify }
+335 silly audit bulk request {
+335 silly audit   accepts: [ '1.3.8' ],
+335 silly audit   anymatch: [ '3.1.3' ],
+335 silly audit   'array-flatten': [ '1.1.1' ],
+335 silly audit   'balanced-match': [ '1.0.2' ],
+335 silly audit   'binary-extensions': [ '2.3.0' ],
+335 silly audit   'body-parser': [ '1.18.3' ],
+335 silly audit   'brace-expansion': [ '1.1.11' ],
+335 silly audit   braces: [ '3.0.3' ],
+335 silly audit   bytes: [ '3.0.0' ],
+335 silly audit   chokidar: [ '3.6.0' ],
+335 silly audit   'concat-map': [ '0.0.1' ],
+335 silly audit   'content-disposition': [ '0.5.2' ],
+335 silly audit   'content-type': [ '1.0.5' ],
+335 silly audit   cookie: [ '0.3.1' ],
+335 silly audit   'cookie-signature': [ '1.0.6' ],
+335 silly audit   debug: [ '2.6.9', '4.4.0' ],
+335 silly audit   depd: [ '1.1.2' ],
+335 silly audit   destroy: [ '1.0.4' ],
+335 silly audit   dotenv: [ '16.5.0' ],
+335 silly audit   'ee-first': [ '1.1.1' ],
+335 silly audit   encodeurl: [ '1.0.2' ],
+335 silly audit   'escape-html': [ '1.0.3' ],
+335 silly audit   etag: [ '1.8.1' ],
+335 silly audit   express: [ '4.16.4' ],
+335 silly audit   'fill-range': [ '7.1.1' ],
+335 silly audit   finalhandler: [ '1.1.1' ],
+335 silly audit   forwarded: [ '0.2.0' ],
+335 silly audit   fresh: [ '0.5.2' ],
+335 silly audit   fsevents: [ '2.3.3' ],
+335 silly audit   'glob-parent': [ '5.1.2' ],
+335 silly audit   'has-flag': [ '3.0.0' ],
+335 silly audit   'http-errors': [ '1.6.3' ],
+335 silly audit   'iconv-lite': [ '0.4.23' ],
+335 silly audit   'ignore-by-default': [ '1.0.1' ],
+335 silly audit   inherits: [ '2.0.3' ],
+335 silly audit   'ipaddr.js': [ '1.9.1' ],
+335 silly audit   'is-binary-path': [ '2.1.0' ],
+335 silly audit   'is-extglob': [ '2.1.1' ],
+335 silly audit   'is-glob': [ '4.0.3' ],
+335 silly audit   'is-number': [ '7.0.0' ],
+335 silly audit   'media-typer': [ '0.3.0' ],
+335 silly audit   'merge-descriptors': [ '1.0.1' ],
+335 silly audit   methods: [ '1.1.2' ],
+335 silly audit   mime: [ '1.4.1' ],
+335 silly audit   'mime-db': [ '1.52.0' ],
+335 silly audit   'mime-types': [ '2.1.35' ],
+335 silly audit   minimatch: [ '3.1.2' ],
+335 silly audit   mkdirp: [ '1.0.4' ],
+335 silly audit   ms: [ '2.0.0', '2.1.3' ],
+335 silly audit   negotiator: [ '0.6.3' ],
+335 silly audit   nodemon: [ '3.1.9' ],
+335 silly audit   'normalize-path': [ '3.0.0' ],
+335 silly audit   'on-finished': [ '2.3.0' ],
+335 silly audit   parseurl: [ '1.3.3' ],
+335 silly audit   'path-to-regexp': [ '0.1.7' ],
+335 silly audit   picomatch: [ '2.3.1' ],
+335 silly audit   'proxy-addr': [ '2.0.7' ],
+335 silly audit   'pstree.remy': [ '1.1.8' ],
+335 silly audit   qs: [ '6.5.2' ],
+335 silly audit   'range-parser': [ '1.2.1' ],
+335 silly audit   'raw-body': [ '2.3.3' ],
+335 silly audit   readdirp: [ '3.6.0' ],
+335 silly audit   'safe-buffer': [ '5.1.2', '5.2.1' ],
+335 silly audit   'safer-buffer': [ '2.1.2' ],
+335 silly audit   semver: [ '7.7.1', '6.3.1' ],
+335 silly audit   send: [ '0.16.2' ],
+335 silly audit   'serve-static': [ '1.13.2' ],
+335 silly audit   setprototypeof: [ '1.1.0' ],
+335 silly audit   'simple-update-notifier': [ '2.0.0' ],
+335 silly audit   statuses: [ '1.4.0' ],
+335 silly audit   'supports-color': [ '5.5.0' ],
+335 silly audit   'to-regex-range': [ '5.0.1' ],
+335 silly audit   touch: [ '3.1.1' ],
+335 silly audit   'type-is': [ '1.6.18' ],
+335 silly audit   undefsafe: [ '2.0.5' ],
+335 silly audit   unpipe: [ '1.0.0' ],
+335 silly audit   'utils-merge': [ '1.0.1' ],
+335 silly audit   vary: [ '1.1.2' ],
+335 silly audit   bcrypt: [ '5.1.1' ],
+335 silly audit   '@mapbox/node-pre-gyp': [ '1.0.11' ],
+335 silly audit   'node-addon-api': [ '5.1.0' ],
+335 silly audit   'detect-libc': [ '2.0.3' ],
+335 silly audit   'https-proxy-agent': [ '5.0.1' ],
+335 silly audit   'make-dir': [ '3.1.0' ],
+335 silly audit   'node-fetch': [ '2.7.0' ],
+335 silly audit   nopt: [ '5.0.0' ],
+335 silly audit   npmlog: [ '5.0.1' ],
+335 silly audit   rimraf: [ '3.0.2' ],
+335 silly audit   tar: [ '6.2.1' ],
+335 silly audit   'agent-base': [ '6.0.2' ],
+335 silly audit   'whatwg-url': [ '5.0.0' ],
+335 silly audit   abbrev: [ '1.1.1' ],
+335 silly audit   'are-we-there-yet': [ '2.0.0' ],
+335 silly audit   'console-control-strings': [ '1.1.0' ],
+335 silly audit   gauge: [ '3.0.2' ],
+335 silly audit   'set-blocking': [ '2.0.0' ],
+335 silly audit   delegates: [ '1.0.0' ],
+335 silly audit   'readable-stream': [ '3.6.2' ],
+335 silly audit   aproba: [ '2.0.0' ],
+335 silly audit   'color-support': [ '1.1.3' ],
+335 silly audit   'has-unicode': [ '2.0.1' ],
+335 silly audit   'object-assign': [ '4.1.1' ],
+335 silly audit   'signal-exit': [ '3.0.7' ],
+335 silly audit   'string-width': [ '4.2.3' ],
+335 silly audit   'strip-ansi': [ '6.0.1' ],
+335 silly audit   'wide-align': [ '1.1.5' ],
+335 silly audit   string_decoder: [ '1.3.0' ],
+335 silly audit   'util-deprecate': [ '1.0.2' ],
+335 silly audit   glob: [ '7.2.3' ],
+335 silly audit   'fs.realpath': [ '1.0.0' ],
+335 silly audit   inflight: [ '1.0.6' ],
+335 silly audit   once: [ '1.4.0' ],
+335 silly audit   'path-is-absolute': [ '1.0.1' ],
+335 silly audit   wrappy: [ '1.0.2' ],
+335 silly audit   'emoji-regex': [ '8.0.0' ],
+335 silly audit   'is-fullwidth-code-point': [ '3.0.0' ],
+335 silly audit   'ansi-regex': [ '5.0.1' ],
+335 silly audit   chownr: [ '2.0.0' ],
+335 silly audit   'fs-minipass': [ '2.1.0' ],
+335 silly audit   minipass: [ '5.0.0', '3.3.6' ],
+335 silly audit   minizlib: [ '2.1.2' ],
+335 silly audit   yallist: [ '4.0.0' ],
+335 silly audit   tr46: [ '0.0.3' ],
+335 silly audit   'webidl-conversions': [ '3.0.1' ]
+335 silly audit }
+336 verbose reify failed optional dependency D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\fsevents
+337 silly reify mark deleted [
+337 silly reify   'D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\fsevents'
+337 silly reify ]
+338 silly tarball no local data for webidl-conversions@https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz. Extracting by manifest.
+339 silly tarball no local data for yallist@https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz. Extracting by manifest.
+340 silly tarball no local data for minipass@https://registry.npmjs.org/minipass/-/minipass-5.0.0.tgz. Extracting by manifest.
+341 silly tarball no local data for tr46@https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz. Extracting by manifest.
+342 silly tarball no local data for minizlib@https://registry.npmjs.org/minizlib/-/minizlib-2.1.2.tgz. Extracting by manifest.
+343 silly tarball no local data for chownr@https://registry.npmjs.org/chownr/-/chownr-2.0.0.tgz. Extracting by manifest.
+344 silly tarball no local data for fs-minipass@https://registry.npmjs.org/fs-minipass/-/fs-minipass-2.1.0.tgz. Extracting by manifest.
+345 silly tarball no local data for ansi-regex@https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz. Extracting by manifest.
+346 silly tarball no local data for is-fullwidth-code-point@https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz. Extracting by manifest.
+347 silly tarball no local data for emoji-regex@https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz. Extracting by manifest.
+348 silly tarball no local data for wrappy@https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz. Extracting by manifest.
+349 silly tarball no local data for path-is-absolute@https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz. Extracting by manifest.
+350 silly tarball no local data for once@https://registry.npmjs.org/once/-/once-1.4.0.tgz. Extracting by manifest.
+351 silly tarball no local data for glob@https://registry.npmjs.org/glob/-/glob-7.2.3.tgz. Extracting by manifest.
+352 silly tarball no local data for fs.realpath@https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz. Extracting by manifest.
+353 silly tarball no local data for inflight@https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz. Extracting by manifest.
+354 silly tarball no local data for util-deprecate@https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz. Extracting by manifest.
+355 silly tarball no local data for string_decoder@https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz. Extracting by manifest.
+356 silly tarball no local data for wide-align@https://registry.npmjs.org/wide-align/-/wide-align-1.1.5.tgz. Extracting by manifest.
+357 silly tarball no local data for strip-ansi@https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz. Extracting by manifest.
+358 silly tarball no local data for string-width@https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz. Extracting by manifest.
+359 silly tarball no local data for signal-exit@https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz. Extracting by manifest.
+360 silly tarball no local data for object-assign@https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz. Extracting by manifest.
+361 silly tarball no local data for has-unicode@https://registry.npmjs.org/has-unicode/-/has-unicode-2.0.1.tgz. Extracting by manifest.
+362 silly tarball no local data for color-support@https://registry.npmjs.org/color-support/-/color-support-1.1.3.tgz. Extracting by manifest.
+363 silly tarball no local data for aproba@https://registry.npmjs.org/aproba/-/aproba-2.0.0.tgz. Extracting by manifest.
+364 silly tarball no local data for delegates@https://registry.npmjs.org/delegates/-/delegates-1.0.0.tgz. Extracting by manifest.
+365 silly tarball no local data for readable-stream@https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz. Extracting by manifest.
+366 silly tarball no local data for gauge@https://registry.npmjs.org/gauge/-/gauge-3.0.2.tgz. Extracting by manifest.
+367 silly tarball no local data for set-blocking@https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz. Extracting by manifest.
+368 silly tarball no local data for are-we-there-yet@https://registry.npmjs.org/are-we-there-yet/-/are-we-there-yet-2.0.0.tgz. Extracting by manifest.
+369 silly tarball no local data for console-control-strings@https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz. Extracting by manifest.
+370 silly tarball no local data for whatwg-url@https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz. Extracting by manifest.
+371 silly tarball no local data for abbrev@https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz. Extracting by manifest.
+372 silly tarball no local data for agent-base@https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz. Extracting by manifest.
+373 silly tarball no local data for tar@https://registry.npmjs.org/tar/-/tar-6.2.1.tgz. Extracting by manifest.
+374 silly tarball no local data for rimraf@https://registry.npmjs.org/rimraf/-/rimraf-3.0.2.tgz. Extracting by manifest.
+375 silly tarball no local data for npmlog@https://registry.npmjs.org/npmlog/-/npmlog-5.0.1.tgz. Extracting by manifest.
+376 silly tarball no local data for nopt@https://registry.npmjs.org/nopt/-/nopt-5.0.0.tgz. Extracting by manifest.
+377 silly tarball no local data for node-fetch@https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz. Extracting by manifest.
+378 silly tarball no local data for make-dir@https://registry.npmjs.org/make-dir/-/make-dir-3.1.0.tgz. Extracting by manifest.
+379 silly tarball no local data for @mapbox/node-pre-gyp@https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.11.tgz. Extracting by manifest.
+380 silly tarball no local data for https-proxy-agent@https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz. Extracting by manifest.
+381 silly tarball no local data for detect-libc@https://registry.npmjs.org/detect-libc/-/detect-libc-2.0.3.tgz. Extracting by manifest.
+382 silly tarball no local data for minipass@https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz. Extracting by manifest.
+383 silly tarball no local data for bcrypt@https://registry.npmjs.org/bcrypt/-/bcrypt-5.1.1.tgz. Extracting by manifest.
+384 silly tarball no local data for safe-buffer@https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz. Extracting by manifest.
+385 silly tarball no local data for node-addon-api@https://registry.npmjs.org/node-addon-api/-/node-addon-api-5.1.0.tgz. Extracting by manifest.
+386 silly tarball no local data for minipass@https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz. Extracting by manifest.
+387 silly tarball no local data for mkdirp@https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz. Extracting by manifest.
+388 silly tarball no local data for semver@https://registry.npmjs.org/semver/-/semver-6.3.1.tgz. Extracting by manifest.
+389 http fetch GET 200 https://registry.npmjs.org/webidl-conversions/-/webidl-conversions-3.0.1.tgz 470ms (cache miss)
+390 http fetch GET 200 https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz 598ms (cache miss)
+391 http fetch GET 200 https://registry.npmjs.org/minipass/-/minipass-5.0.0.tgz 705ms (cache miss)
+392 http fetch GET 200 https://registry.npmjs.org/chownr/-/chownr-2.0.0.tgz 1161ms (cache miss)
+393 http fetch GET 200 https://registry.npmjs.org/minizlib/-/minizlib-2.1.2.tgz 1204ms (cache miss)
+394 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 1458ms
+395 silly audit report {
+395 silly audit report   'body-parser': [
+395 silly audit report     {
+395 silly audit report       id: 1099520,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-qwcr-r2fm-qrc7',
+395 silly audit report       title: 'body-parser vulnerable to denial of service when url encoding is enabled',
+395 silly audit report       severity: 'high',
+395 silly audit report       vulnerable_versions: '<1.20.3',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     }
+395 silly audit report   ],
+395 silly audit report   cookie: [
+395 silly audit report     {
+395 silly audit report       id: 1099846,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-pxg6-pf52-xh8x',
+395 silly audit report       title: 'cookie accepts cookie name, path, and domain with out of bounds characters',
+395 silly audit report       severity: 'low',
+395 silly audit report       vulnerable_versions: '<0.7.0',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     }
+395 silly audit report   ],
+395 silly audit report   express: [
+395 silly audit report     {
+395 silly audit report       id: 1100530,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-qw6h-vgh9-j6wx',
+395 silly audit report       title: 'express vulnerable to XSS via response.redirect()',
+395 silly audit report       severity: 'low',
+395 silly audit report       vulnerable_versions: '<4.20.0',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     },
+395 silly audit report     {
+395 silly audit report       id: 1096820,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-rv95-896h-c2vc',
+395 silly audit report       title: 'Express.js Open Redirect in malformed URLs',
+395 silly audit report       severity: 'moderate',
+395 silly audit report       vulnerable_versions: '<4.19.2',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     }
+395 silly audit report   ],
+395 silly audit report   'path-to-regexp': [
+395 silly audit report     {
+395 silly audit report       id: 1101844,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-rhx6-c78j-4q9w',
+395 silly audit report       title: 'Unpatched `path-to-regexp` ReDoS in 0.1.x',
+395 silly audit report       severity: 'high',
+395 silly audit report       vulnerable_versions: '<0.1.12',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     },
+395 silly audit report     {
+395 silly audit report       id: 1101850,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-9wv6-86v2-598j',
+395 silly audit report       title: 'path-to-regexp outputs backtracking regular expressions',
+395 silly audit report       severity: 'high',
+395 silly audit report       vulnerable_versions: '<0.1.10',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     }
+395 silly audit report   ],
+395 silly audit report   qs: [
+395 silly audit report     {
+395 silly audit report       id: 1096470,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-hrpp-h998-j3pp',
+395 silly audit report       title: 'qs vulnerable to Prototype Pollution',
+395 silly audit report       severity: 'high',
+395 silly audit report       vulnerable_versions: '>=6.5.0 <6.5.3',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     }
+395 silly audit report   ],
+395 silly audit report   send: [
+395 silly audit report     {
+395 silly audit report       id: 1100526,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-m6fv-jmcg-4jfg',
+395 silly audit report       title: 'send vulnerable to template injection that can lead to XSS',
+395 silly audit report       severity: 'low',
+395 silly audit report       vulnerable_versions: '<0.19.0',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     }
+395 silly audit report   ],
+395 silly audit report   'serve-static': [
+395 silly audit report     {
+395 silly audit report       id: 1100528,
+395 silly audit report       url: 'https://github.com/advisories/GHSA-cm22-4g7w-348p',
+395 silly audit report       title: 'serve-static vulnerable to template injection that can lead to XSS',
+395 silly audit report       severity: 'low',
+395 silly audit report       vulnerable_versions: '<1.16.0',
+395 silly audit report       cwe: [Array],
+395 silly audit report       cvss: [Object]
+395 silly audit report     }
+395 silly audit report   ]
+395 silly audit report }
+396 silly packumentCache corgi:https://registry.npmjs.org/body-parser cache-miss
+397 silly packumentCache corgi:https://registry.npmjs.org/cookie cache-miss
+398 silly packumentCache corgi:https://registry.npmjs.org/express cache-miss
+399 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp cache-miss
+400 silly packumentCache corgi:https://registry.npmjs.org/qs cache-miss
+401 silly packumentCache corgi:https://registry.npmjs.org/send cache-miss
+402 silly packumentCache corgi:https://registry.npmjs.org/serve-static cache-miss
+403 http fetch GET 200 https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz 1469ms (cache miss)
+404 http fetch GET 200 https://registry.npmjs.org/fs-minipass/-/fs-minipass-2.1.0.tgz 1476ms (cache miss)
+405 http fetch GET 200 https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz 1484ms (cache miss)
+406 http fetch GET 200 https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz 1486ms (cache miss)
+407 http fetch GET 200 https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz 1552ms (cache miss)
+408 http fetch GET 200 https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz 1592ms (cache miss)
+409 warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+410 http fetch GET 200 https://registry.npmjs.org/tr46/-/tr46-0.0.3.tgz 1714ms (cache miss)
+411 http fetch GET 200 https://registry.npmjs.org/util-deprecate/-/util-deprecate-1.0.2.tgz 1770ms (cache miss)
+412 http fetch GET 200 https://registry.npmjs.org/string_decoder/-/string_decoder-1.3.0.tgz 1880ms (cache miss)
+413 http fetch GET 200 https://registry.npmjs.org/wide-align/-/wide-align-1.1.5.tgz 2048ms (cache miss)
+414 http fetch GET 200 https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz 2119ms (cache miss)
+415 http fetch GET 200 https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz 2327ms (cache miss)
+416 http fetch GET 200 https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz 2338ms (cache miss)
+417 http fetch GET 200 https://registry.npmjs.org/has-unicode/-/has-unicode-2.0.1.tgz 2340ms (cache miss)
+418 http fetch GET 200 https://registry.npmjs.org/color-support/-/color-support-1.1.3.tgz 2360ms (cache miss)
+419 http fetch GET 200 https://registry.npmjs.org/signal-exit/-/signal-exit-3.0.7.tgz 2365ms (cache miss)
+420 http fetch GET 200 https://registry.npmjs.org/aproba/-/aproba-2.0.0.tgz 2378ms (cache miss)
+421 http fetch GET 200 https://registry.npmjs.org/delegates/-/delegates-1.0.0.tgz 2393ms (cache miss)
+422 http fetch GET 200 https://registry.npmjs.org/readable-stream/-/readable-stream-3.6.2.tgz 2540ms (cache miss)
+423 http fetch GET 200 https://registry.npmjs.org/set-blocking/-/set-blocking-2.0.0.tgz 2859ms (cache miss)
+424 http fetch GET 200 https://registry.npmjs.org/gauge/-/gauge-3.0.2.tgz 3147ms (cache miss)
+425 warn deprecated gauge@3.0.2: This package is no longer supported.
+426 http fetch GET 200 https://registry.npmjs.org/are-we-there-yet/-/are-we-there-yet-2.0.0.tgz 3155ms (cache miss)
+427 http fetch GET 200 https://registry.npmjs.org/console-control-strings/-/console-control-strings-1.1.0.tgz 3147ms (cache miss)
+428 warn deprecated are-we-there-yet@2.0.0: This package is no longer supported.
+429 http fetch GET 200 https://registry.npmjs.org/whatwg-url/-/whatwg-url-5.0.0.tgz 3171ms (cache miss)
+430 http fetch GET 200 https://registry.npmjs.org/abbrev/-/abbrev-1.1.1.tgz 3192ms (cache miss)
+431 http fetch GET 200 https://registry.npmjs.org/agent-base/-/agent-base-6.0.2.tgz 3612ms (cache miss)
+432 http fetch GET 200 https://registry.npmjs.org/rimraf/-/rimraf-3.0.2.tgz 4881ms (cache miss)
+433 warn deprecated rimraf@3.0.2: Rimraf versions prior to v4 are no longer supported
+434 http fetch GET 200 https://registry.npmjs.org/npmlog/-/npmlog-5.0.1.tgz 4996ms (cache miss)
+435 warn deprecated npmlog@5.0.1: This package is no longer supported.
+436 http fetch GET 200 https://registry.npmjs.org/nopt/-/nopt-5.0.0.tgz 5211ms (cache miss)
+437 http fetch GET 200 https://registry.npmjs.org/glob/-/glob-7.2.3.tgz 5456ms (cache miss)
+438 warn deprecated glob@7.2.3: Glob versions prior to v9 are no longer supported
+439 http fetch GET 200 https://registry.npmjs.org/node-fetch/-/node-fetch-2.7.0.tgz 6471ms (cache miss)
+440 http fetch GET 200 https://registry.npmjs.org/make-dir/-/make-dir-3.1.0.tgz 6561ms (cache miss)
+441 http fetch GET 200 https://registry.npmjs.org/once/-/once-1.4.0.tgz 6653ms (cache miss)
+442 http fetch GET 200 https://registry.npmjs.org/@mapbox/node-pre-gyp/-/node-pre-gyp-1.0.11.tgz 8087ms (cache miss)
+443 http fetch GET 200 https://registry.npmjs.org/https-proxy-agent/-/https-proxy-agent-5.0.1.tgz 8280ms (cache miss)
+444 http fetch GET 200 https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz 8624ms (cache miss)
+445 http fetch GET 200 https://registry.npmjs.org/detect-libc/-/detect-libc-2.0.3.tgz 8587ms (cache miss)
+446 http fetch GET 200 https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz 8636ms (cache miss)
+447 http fetch GET 200 https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz 8784ms (cache miss)
+448 http fetch GET 200 https://registry.npmjs.org/bcrypt/-/bcrypt-5.1.1.tgz 9211ms (cache miss)
+449 http fetch GET 200 https://registry.npmjs.org/tar/-/tar-6.2.1.tgz 9277ms (cache miss)
+450 http fetch GET 200 https://registry.npmjs.org/minipass/-/minipass-3.3.6.tgz 9864ms (cache miss)
+451 http fetch GET 200 https://registry.npmjs.org/mkdirp/-/mkdirp-1.0.4.tgz 9967ms (cache miss)
+452 http fetch GET 200 https://registry.npmjs.org/semver/-/semver-6.3.1.tgz 10376ms (cache miss)
+453 http fetch GET 200 https://registry.npmjs.org/body-parser 9073ms (cache updated)
+454 silly packumentCache corgi:https://registry.npmjs.org/body-parser set size:undefined disposed:false
+455 http fetch GET 200 https://registry.npmjs.org/qs 9457ms (cache updated)
+456 silly packumentCache corgi:https://registry.npmjs.org/qs set size:undefined disposed:false
+457 http fetch GET 200 https://registry.npmjs.org/cookie 9944ms (cache updated)
+458 silly packumentCache corgi:https://registry.npmjs.org/cookie set size:undefined disposed:false
+459 http fetch GET 200 https://registry.npmjs.org/send 10893ms (cache updated)
+460 silly packumentCache corgi:https://registry.npmjs.org/send set size:undefined disposed:false
+461 http fetch GET 200 https://registry.npmjs.org/path-to-regexp 11475ms (cache updated)
+462 silly packumentCache corgi:https://registry.npmjs.org/path-to-regexp set size:undefined disposed:false
+463 http fetch GET 200 https://registry.npmjs.org/serve-static 11720ms (cache updated)
+464 silly packumentCache corgi:https://registry.npmjs.org/serve-static set size:undefined disposed:false
+465 http fetch GET 200 https://registry.npmjs.org/node-addon-api/-/node-addon-api-5.1.0.tgz 13555ms (cache miss)
+466 http fetch GET 200 https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz 13827ms (cache miss)
+467 info run bcrypt@5.1.1 install node_modules/bcrypt node-pre-gyp install --fallback-to-build
+468 http fetch GET 200 https://registry.npmjs.org/express 12725ms (cache updated)
+469 silly packumentCache corgi:https://registry.npmjs.org/express set size:undefined disposed:false
+470 info run bcrypt@5.1.1 install { code: 1, signal: null }
+471 verbose stack Error: command failed
+471 verbose stack     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:22:22)
+471 verbose stack     at spawnWithShell (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:124:10)
+471 verbose stack     at promiseSpawn (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\promise-spawn\lib\index.js:12:12)
+471 verbose stack     at runScriptPkg (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script-pkg.js:77:13)
+471 verbose stack     at runScript (C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\run-script\lib\run-script.js:9:12)
+471 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\@npmcli\arborist\lib\arborist\rebuild.js:329:17
+471 verbose stack     at run (C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:67:22)
+471 verbose stack     at C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:84:9
+471 verbose stack     at new Promise (<anonymous>)
+471 verbose stack     at callLimit (C:\Program Files\nodejs\node_modules\npm\node_modules\promise-call-limit\dist\commonjs\index.js:35:69)
+472 verbose pkgid bcrypt@5.1.1
+473 error code 1
+474 error path D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt
+475 error command failed
+476 error command C:\WINDOWS\system32\cmd.exe /d /s /c node-pre-gyp install --fallback-to-build
+477 error Failed to execute 'C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js configure --fallback-to-build --module=D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node --module_name=bcrypt_lib --module_path=D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt\lib\binding\napi-v3 --napi_version=9 --node_abi_napi=napi --napi_build_version=3 --node_napi_label=napi-v3' (1)
+478 error node-pre-gyp info it worked if it ends with ok
+478 error node-pre-gyp info using node-pre-gyp@1.0.11
+478 error node-pre-gyp info using node@20.17.0 | win32 | x64
+478 error node-pre-gyp info check checked for "D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node" (not found)
+478 error node-pre-gyp http GET https://github.com/kelektiv/node.bcrypt.js/releases/download/v5.1.1/bcrypt_lib-v5.1.1-napi-v3-win32-x64-unknown.tar.gz
+478 error node-pre-gyp ERR! install request to https://objects.githubusercontent.com/github-production-release-asset-2e65be/611333/97a8321c-5d46-45ec-b4ee-95fc5d5053fb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250414%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250414T163449Z&X-Amz-Expires=300&X-Amz-Signature=e2c19afa0f4c51f675fde4851b9f63cc8d416073b8d10d87e35dcd9f1aa0e299&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dbcrypt_lib-v5.1.1-napi-v3-win32-x64-unknown.tar.gz&response-content-type=application%2Foctet-stream failed, reason: read ECONNRESET 
+478 error node-pre-gyp WARN Pre-built binaries not installable for bcrypt@5.1.1 and node@20.17.0 (node-v115 ABI, unknown) (falling back to source compile with node-gyp) 
+478 error node-pre-gyp WARN Hit error request to https://objects.githubusercontent.com/github-production-release-asset-2e65be/611333/97a8321c-5d46-45ec-b4ee-95fc5d5053fb?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=releaseassetproduction%2F20250414%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Date=20250414T163449Z&X-Amz-Expires=300&X-Amz-Signature=e2c19afa0f4c51f675fde4851b9f63cc8d416073b8d10d87e35dcd9f1aa0e299&X-Amz-SignedHeaders=host&response-content-disposition=attachment%3B%20filename%3Dbcrypt_lib-v5.1.1-napi-v3-win32-x64-unknown.tar.gz&response-content-type=application%2Foctet-stream failed, reason: read ECONNRESET 
+478 error gyp info it worked if it ends with ok
+478 error gyp info using node-gyp@10.1.0
+478 error gyp info using node@20.17.0 | win32 | x64
+478 error gyp info ok 
+478 error gyp info it worked if it ends with ok
+478 error gyp info using node-gyp@10.1.0
+478 error gyp info using node@20.17.0 | win32 | x64
+478 error gyp info find Python using Python version 3.10.7 found at "C:\Users\hussa\AppData\Local\Programs\Python\Python310\python.exe"
+478 error gyp ERR! find VS 
+478 error gyp ERR! find VS msvs_version not set from command line or npm config
+478 error gyp ERR! find VS VCINSTALLDIR not set, not running in VS Command Prompt
+478 error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+478 error gyp ERR! find VS 
+478 error gyp ERR! find VS Failure details: undefined
+478 error gyp ERR! find VS checking VS2022 (17.1.32319.34) found at:
+478 error gyp ERR! find VS "C:\Program Files\Microsoft Visual Studio\2022\Community"
+478 error gyp ERR! find VS - "Visual Studio C++ core features" missing
+478 error gyp ERR! find VS could not find a version of Visual Studio 2017 or newer to use
+478 error gyp ERR! find VS could not use PowerShell to find Visual Studio 2017 or newer, try re-running with '--loglevel silly' for more details.
+478 error gyp ERR! find VS 
+478 error gyp ERR! find VS Failure details: undefined
+478 error gyp ERR! find VS unsupported version "17.1.32319.34" found at "C:\Program Files\Microsoft Visual Studio\2022\Community"
+478 error gyp ERR! find VS could not find a version of Visual Studio 2017 or newer to use
+478 error gyp ERR! find VS not looking for VS2015 as it is only supported up to Node.js 18
+478 error gyp ERR! find VS not looking for VS2013 as it is only supported up to Node.js 8
+478 error gyp ERR! find VS 
+478 error gyp ERR! find VS **************************************************************
+478 error gyp ERR! find VS You need to install the latest version of Visual Studio
+478 error gyp ERR! find VS including the "Desktop development with C++" workload.
+478 error gyp ERR! find VS For more information consult the documentation at:
+478 error gyp ERR! find VS https://github.com/nodejs/node-gyp#on-windows
+478 error gyp ERR! find VS **************************************************************
+478 error gyp ERR! find VS 
+478 error gyp ERR! configure error 
+478 error gyp ERR! stack Error: Could not find any Visual Studio installation to use
+478 error gyp ERR! stack at VisualStudioFinder.fail (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-visualstudio.js:116:11)
+478 error gyp ERR! stack at VisualStudioFinder.findVisualStudio (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\find-visualstudio.js:72:17)
+478 error gyp ERR! stack at process.processTicksAndRejections (node:internal/process/task_queues:95:5)
+478 error gyp ERR! stack at async createBuildDir (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\lib\configure.js:95:26)
+478 error gyp ERR! stack at async run (C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js:81:18)
+478 error gyp ERR! System Windows_NT 10.0.22000
+478 error gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\node_modules\\node-gyp\\bin\\node-gyp.js" "configure" "--fallback-to-build" "--module=D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\bcrypt\\lib\\binding\\napi-v3\\bcrypt_lib.node" "--module_name=bcrypt_lib" "--module_path=D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\bcrypt\\lib\\binding\\napi-v3" "--napi_version=9" "--node_abi_napi=napi" "--napi_build_version=3" "--node_napi_label=napi-v3"
+478 error gyp ERR! cwd D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt
+478 error gyp ERR! node -v v20.17.0
+478 error gyp ERR! node-gyp -v v10.1.0
+478 error gyp ERR! not ok 
+478 error node-pre-gyp ERR! build error 
+478 error node-pre-gyp ERR! stack Error: Failed to execute 'C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\node_modules\node-gyp\bin\node-gyp.js configure --fallback-to-build --module=D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt\lib\binding\napi-v3\bcrypt_lib.node --module_name=bcrypt_lib --module_path=D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt\lib\binding\napi-v3 --napi_version=9 --node_abi_napi=napi --napi_build_version=3 --node_napi_label=napi-v3' (1)
+478 error node-pre-gyp ERR! stack     at ChildProcess.<anonymous> (D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\@mapbox\node-pre-gyp\lib\util\compile.js:89:23)
+478 error node-pre-gyp ERR! stack     at ChildProcess.emit (node:events:519:28)
+478 error node-pre-gyp ERR! stack     at maybeClose (node:internal/child_process:1105:16)
+478 error node-pre-gyp ERR! stack     at ChildProcess._handle.onexit (node:internal/child_process:305:5)
+478 error node-pre-gyp ERR! System Windows_NT 10.0.22000
+478 error node-pre-gyp ERR! command "C:\\Program Files\\nodejs\\node.exe" "D:\\Documents\\Github\\RiseAcademy Backend\\mentorship_API\\node_modules\\@mapbox\\node-pre-gyp\\bin\\node-pre-gyp" "install" "--fallback-to-build"
+478 error node-pre-gyp ERR! cwd D:\Documents\Github\RiseAcademy Backend\mentorship_API\node_modules\bcrypt
+478 error node-pre-gyp ERR! node -v v20.17.0
+478 error node-pre-gyp ERR! node-pre-gyp -v v1.0.11
+478 error node-pre-gyp ERR! not ok
+479 silly unfinished npm timer reify 1744648459776
+480 silly unfinished npm timer reify:build 1744648486690
+481 silly unfinished npm timer build 1744648486691
+482 silly unfinished npm timer build:deps 1744648486691
+483 silly unfinished npm timer build:run:install 1744648486717
+484 silly unfinished npm timer build:run:install:node_modules/bcrypt 1744648486718
+485 verbose cwd D:\Documents\Github\RiseAcademy Backend\mentorship_API
+486 verbose os Windows_NT 10.0.22000
+487 verbose node v20.17.0
+488 verbose npm  v10.8.2
+489 verbose exit 1
+490 verbose code 1
+491 error A complete log of this run can be found in: D:\Documents\Github\RiseAcademy Backend\mentorship_API\npm-cache\_logs\2025-04-14T16_34_18_856Z-debug-0.log

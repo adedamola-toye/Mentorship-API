@@ -38,6 +38,11 @@ function signin(req, res) {
             return res.status(500).json({message:"Error comparing passwords"})
         }
         if(isMatch){
+          const token = jwt.sign(
+            { userId: existingUser.id, email: existingUser.email, role: existingUser.role },
+            process.env.JWT_SECRET_KEY,
+            { expiresIn: '1h' } 
+          );
             return res.status(200).json({ message: "User signed in successfully" });
         }
         else{

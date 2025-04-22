@@ -1,4 +1,4 @@
-
+import {users, saveUsersToFile} from "../data/users.js"
 function getAllMentors(req,res){
     const mentors = users.filter((user)=> user.role === "mentor");
     if(mentors.length === 0){
@@ -7,4 +7,16 @@ function getAllMentors(req,res){
     return res.status(200).json({mentors})
 }
 
-export default {getAllMentors}
+
+function getSpecificMentor(req, res) {
+    const mentorId = req.params.id; 
+    const mentor = users.find((user) => user.role === "mentor" && user.id === mentorId);
+  
+    if (!mentor) {
+      return res.status(404).json({ message: "Mentor not found" });
+    }
+  
+    return res.status(200).json({ mentor });
+  }
+  
+export default {getAllMentors, getSpecificMentor}

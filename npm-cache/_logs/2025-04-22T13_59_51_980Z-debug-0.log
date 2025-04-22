@@ -1,0 +1,21 @@
+0 verbose cli C:\Program Files\nodejs\node.exe C:\Program Files\nodejs\node_modules\npm\bin\npm-cli.js
+1 info using npm@10.8.2
+2 info using node@v20.17.0
+3 silly config load:file:C:\Program Files\nodejs\node_modules\npm\npmrc
+4 silly config load:file:D:\Documents\Github\RiseAcademy Backend\Mentorship API\.npmrc
+5 silly config load:file:C:\Users\hussa\.npmrc
+6 silly config load:file:C:\Users\hussa\AppData\Roaming\npm\etc\npmrc
+7 verbose title npm ls @scarf/scarf
+8 verbose argv "ls" "@scarf/scarf" "--json" "--long"
+9 verbose logfile logs-max:10 dir:D:\Documents\Github\RiseAcademy Backend\Mentorship API\npm-cache\_logs\2025-04-22T13_59_51_980Z-
+10 verbose logfile D:\Documents\Github\RiseAcademy Backend\Mentorship API\npm-cache\_logs\2025-04-22T13_59_51_980Z-debug-0.log
+11 silly packumentCache heap:2197815296 maxSize:549453824 maxEntrySize:274726912
+12 silly logfile start cleaning logs, removing 1 files
+13 silly logfile done cleaning log files
+14 verbose shrinkwrap failed to load node_modules/.package-lock.json out of date, updated: node_modules
+15 verbose cwd D:\Documents\Github\RiseAcademy Backend\Mentorship API
+16 verbose os Windows_NT 10.0.22000
+17 verbose node v20.17.0
+18 verbose npm  v10.8.2
+19 verbose exit 0
+20 info ok

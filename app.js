@@ -27,12 +27,27 @@ const swaggerOptions = {
     },
     servers: [
       {
-        url: "http://localhost:3000/api-docs"
+        url: "http://localhost:5001/api"
+      }
+    ],
+    components: {
+      securitySchemes: {
+        bearerAuth: {
+          type: "http",
+          scheme: "bearer",
+          bearerFormat: "JWT"
+        }
+      }
+    },
+    security: [
+      {
+        bearerAuth: []
       }
     ]
   },
-  apis: ["./routes/*.js"],  // Points to the location of your route files with annotations
+  apis: ["./routes/*.js"],  
 };
+
 
 const swaggerSpec = swaggerJsdoc(swaggerOptions);
 // Swagger UI setup
@@ -42,7 +57,7 @@ app.get('/',(req,res) => {
   res.send('Welcome')
 })
 
-app.use("/api/", authRoutes)
+app.use("/api/auth", authRoutes)
 app.use("/api/", adminRoutes)
 app.use("/api/", mentorRoutes)
 app.use("/api/", sessionRoutes)

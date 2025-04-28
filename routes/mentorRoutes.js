@@ -7,6 +7,8 @@ router.get('/mentors', isAuthenticated, mentorController.getAllMentors)
 router.get('/mentors/:id', isAuthenticated, mentorController.getSpecificMentor)
 
 export default router; */
+
+
 import express from "express";
 const router = express.Router();
 import mentorController from '../controllers/mentorController.js';
@@ -25,12 +27,6 @@ import isAuthenticated from "../middleware/isAuthenticated.js";
  *   get:
  *     description: Get all mentors
  *     tags: [Mentors]
- *     parameters:
- *       - name: token
- *         in: header
- *         required: true
- *         schema:
- *           type: string
  *     responses:
  *       200:
  *         description: List of all mentors
@@ -61,11 +57,6 @@ router.get('/mentors', isAuthenticated, mentorController.getAllMentors);
  *     description: Get specific mentor details
  *     tags: [Mentors]
  *     parameters:
- *       - name: token
- *         in: header
- *         required: true
- *         schema:
- *           type: string
  *       - name: id
  *         in: path
  *         required: true

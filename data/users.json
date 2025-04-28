@@ -1,1 +1,35 @@
-[]
+[
+  {
+    "id": 1,
+    "firstName": "Ade",
+    "lastName": "Toye",
+    "email": "toye.adedamola@gmail.com",
+    "hashedPassword": "$2b$10$qg6Z12xxfbKr78KN5LQ1sOtWQmKOQmb7yP/Ay.GDSkD/k6sASJqDC",
+    "address": "123 Main Street",
+    "bio": "A passionate developer.",
+    "occupation": "Software Engineer",
+    "role": "admin"
+  },
+  {
+    "id": 2,
+    "firstName": "Opeyemi",
+    "lastName": "Anu",
+    "email": "opeyemi_anu@gmail.com",
+    "hashedPassword": "$2b$10$04BFAZCECoczyZ1KY1oVxOnzCrLxfJYYJ14FvmCg62/TKAMMaa4YW",
+    "address": "123 Main Street2",
+    "bio": "A passionate developer and computer science student.",
+    "occupation": "Frontend developer",
+    "role": "mentor"
+  },
+  {
+    "id": 3,
+    "firstName": "Omowunmi",
+    "lastName": "Toyibah",
+    "email": "omowunmi5@gmail.com",
+    "hashedPassword": "$2b$10$RxCf8W3NFhVmVAfRzQVlUelUY/OASdjbzBTFDiKRj8kcbAudaipku",
+    "address": "123 Main Street3",
+    "bio": "A passionate developer.",
+    "occupation": "Student",
+    "role": "user"
+  }
+]

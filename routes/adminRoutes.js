@@ -30,31 +30,29 @@ import isAuthenticated from "../middleware/isAuthenticated.js";
  * @swagger
  * /users/{userId}/promoteToMentor:
  *   patch:
- *     description: Admin promotes a user to a mentor role
+ *     summary: Admin promotes a user to mentor role
  *     tags: [Admin]
+ *     security:
+ *       - bearerAuth: []
  *     parameters:
  *       - name: userId
  *         in: path
  *         required: true
  *         schema:
  *           type: integer
- *       - name: token
- *         in: header
- *         required: true
- *         schema:
- *           type: string
+ *         description: ID of the user to promote
  *     responses:
  *       200:
- *         description: User successfully promoted to mentor
+ *         description: User promoted successfully
  *       403:
- *         description: Forbidden - Unauthorized role or insufficient permissions
+ *         description: Unauthorized
  *       404:
  *         description: User not found
  *       500:
  *         description: Server error
  */
 router.patch(
-  "/users/:userId/promoteToMentor",
+  "/users/:id/promoteToMentor",
   isAuthenticated,
   isAdmin,
   promoteToMentor

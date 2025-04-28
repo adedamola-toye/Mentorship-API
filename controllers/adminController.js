@@ -1,7 +1,10 @@
-import { saveUsersToFile, users } from "../data/users.js";
+import { saveUsersToFile, loadUsersFromFile } from "../data/users.js";
 
 function promoteToMentor(req, res) {
-  const userId = req.params.userId;
+  const userId = parseInt(req.params.id);
+
+  const users = loadUsersFromFile();
+
   const user = users.find((user) => user.id === userId);
   if (!user) {
     return res.status(404).json({ message: "User not found" });
@@ -12,7 +15,7 @@ function promoteToMentor(req, res) {
     return res.status(400).json({ message: `User is already a ${newRole}` });
   }
   user.role = newRole;
-  saveUsersToFile();
+  saveUsersToFile(users);
 
   const {hashedPassword, ...safeUser} = user;
 

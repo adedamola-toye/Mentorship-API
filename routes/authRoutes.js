@@ -25,63 +25,75 @@ import authController from "../controllers/authController.js";
  * @swagger
  * /auth/signup:
  *   post:
- *     description: Create user account
+ *     summary: Create a user account
  *     tags: [Authentication]
- *     parameters:
- *       - name: firstName
- *         in: body
- *         required: true
- *         schema:
- *           type: string
- *       - name: lastName
- *         in: body
- *         required: true
- *         schema:
- *           type: string
- *       - name: email
- *         in: body
- *         required: true
- *         schema:
- *           type: string
- *       - name: password
- *         in: body
- *         required: true
- *         schema:
- *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - firstName
+ *               - lastName
+ *               - email
+ *               - password
+ *               - address
+ *               - bio
+ *               - occupation
+ *             properties:
+ *               firstName:
+ *                 type: string
+ *                 example: Ade
+ *               lastName:
+ *                 type: string
+ *                 example: Toye
+ *               email:
+ *                 type: string
+ *                 example: toye.adedamola@gmail.com
+ *               password:
+ *                 type: string
+ *                 example: toye123
+ *               address:
+ *                 type: string
+ *                 example: 123 Main Street
+ *               bio:
+ *                 type: string
+ *                 example: A passionate developer.
+ *               occupation:
+ *                 type: string
+ *                 example: Software Engineer
  *     responses:
  *       201:
  *         description: User created successfully
- *         content:
- *           application/json:
- *             schema:
- *               type: object
- *               properties:
- *                 token:
- *                   type: string
- *                 message:
- *                   type: string
  *       400:
  *         description: Bad request
  */
+
 router.post("/signup", authController.signup);
 
 /**
  * @swagger
  * /auth/signin:
  *   post:
- *     description: Login a user
+ *     summary: Login a user
  *     tags: [Authentication]
- *     parameters:
- *       - name: email
- *         in: body
- *         required: true
- *         schema:
- *           type: string
- *       - name: password
- *         in: body
- *         required: true
- *         schema:
- *           type: string
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             required:
+ *               - email
+ *               - password
+ *             properties:
+ *               email:
+ *                 type: string
+ *                 example: toye.adedamola@gmail.com
+ *               password:
+ *                 type: string
+ *                 example: abc123
  *     responses:
  *       200:
  *         description: User logged in successfully
@@ -94,7 +106,10 @@ router.post("/signup", authController.signup);
  *                   type: string
  *                 message:
  *                   type: string
+ *       400:
+ *         description: Bad request
  */
+
 router.post("/signin", authController.signin);
 
 export default router;

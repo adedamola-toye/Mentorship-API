@@ -1,1 +1,30 @@
-[]
+[
+  {
+    "id": 1,
+    "menteeId": 3,
+    "mentorId": 2,
+    "questions": [
+      "How do you get a job at FAANG?",
+      "How to center a div"
+    ],
+    "menteeEmail": "omowunmi5@gmail.com",
+    "status": "accepted",
+    "createdAt": "2025-04-28T10:23:36.186Z",
+    "review": {
+      "rating": 7,
+      "comment": "Nice session"
+    }
+  },
+  {
+    "id": 2,
+    "menteeId": 3,
+    "mentorId": 2,
+    "questions": [
+      "How do you get a job at FAANG?",
+      "How to center a div"
+    ],
+    "menteeEmail": "omowunmi5@gmail.com",
+    "status": "rejected",
+    "createdAt": "2025-04-28T10:57:00.570Z"
+  }
+]

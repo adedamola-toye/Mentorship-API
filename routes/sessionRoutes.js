@@ -41,7 +41,9 @@ import isAuthenticated from "../middleware/isAuthenticated.js";
  *               mentorId:
  *                 type: integer
  *               questions:
- *                 type: string
+ *                 type: array
+ *                 items:
+ *                      type: string
  *     responses:
  *       200:
  *         description: Session created successfully
@@ -55,21 +57,18 @@ router.post('/sessions', isAuthenticated, isMentee, sessionController.createSess
  *     description: Mentor can accept a session
  *     tags: [Sessions]
  *     parameters:
- *       - name: token
- *         in: header
- *         required: true
- *         schema:
- *           type: string
  *       - name: id
  *         in: path
  *         required: true
  *         schema:
  *           type: integer
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
  *         description: Session accepted
  */
-router.patch('/sessions/:id/accept', isMentor, sessionController.acceptSession);
+router.patch('/sessions/:id/accept', isAuthenticated, isMentor, sessionController.acceptSession);
 
 /**
  * @swagger
@@ -78,21 +77,18 @@ router.patch('/sessions/:id/accept', isMentor, sessionController.acceptSession);
  *     description: Mentor can reject a session
  *     tags: [Sessions]
  *     parameters:
- *       - name: token
- *         in: header
- *         required: true
- *         schema:
- *           type: string
  *       - name: id
  *         in: path
  *         required: true
  *         schema:
  *           type: integer
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
  *         description: Session rejected
  */
-router.patch('/sessions/:id/reject', isAuthenticated, isMentor, sessionController.rejectSession);
+router.patch('/sessions/:id/reject', isAuthenticated,  isMentor, sessionController.rejectSession);
 
 /**
  * @swagger
@@ -101,19 +97,60 @@ router.patch('/sessions/:id/reject', isAuthenticated, isMentor, sessionControlle
  *     description: Review a mentor after a session
  *     tags: [Sessions]
  *     parameters:
- *       - name: token
- *         in: header
- *         required: true
- *         schema:
- *           type: string
  *       - name: id
  *         in: path
  *         required: true
  *         schema:
  *           type: integer
+ *           description: The ID of the session to review
+ *     requestBody:
+ *       required: true
+ *       content:
+ *         application/json:
+ *           schema:
+ *             type: object
+ *             properties:
+ *               rating:
+ *                 type: integer
+ *                 description: Rating for the session (e.g., 1 to 5)
+ *               comment:
+ *                 type: string
+ *                 description: Comment about the session
+ *             required:
+ *               - rating
+ *               - comment
+ *     security:
+ *       - bearerAuth: []
  *     responses:
  *       200:
- *         description: Session reviewed
+ *         description: Session reviewed successfully
+ *         content:
+ *           application/json:
+ *             schema:
+ *               type: object
+ *               properties:
+ *                 message:
+ *                   type: string
+ *                 session:
+ *                   type: object
+ *                   properties:
+ *                     id:
+ *                       type: integer
+ *                     status:
+ *                       type: string
+ *                     review:
+ *                       type: object
+ *                       properties:
+ *                         rating:
+ *                           type: integer
+ *                         comment:
+ *                           type: string
+ *       400:
+ *         description: Rating or comment missing, or session not accepted
+ *       403:
+ *         description: Not authorized to review this session
+ *       404:
+ *         description: Session not found
  */
 router.patch('/sessions/:id/review', isAuthenticated, isMentee, sessionController.reviewSession);
 

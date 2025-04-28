@@ -1,25 +1,28 @@
 import fs from "fs";
 const filePath = "./data/sessions.json";
 
-// Load sessions from file when app starts
-let sessions = [];
-if (fs.existsSync(filePath)) {
-  const fileData = fs.readFileSync(filePath, "utf-8");
-  sessions = JSON.parse(fileData || "[]");
-}
-
+// Make sure the file exists
 if (!fs.existsSync(filePath)) {
-    fs.writeFileSync(filePath, "[]", "utf-8");
-  }
-
-let nextSessionId = sessions.length > 0 ? sessions[sessions.length - 1].id + 1 : 1;
-function generateSessionId(){
-    return nextSessionId++;
+  fs.writeFileSync(filePath, "[]", "utf-8");
 }
+
+// Load sessions from file
+function loadSessionsFromFile() {
+  const fileData = fs.readFileSync(filePath, "utf-8");
+  return JSON.parse(fileData || "[]");
+}
+
 // Save sessions to file
-function saveSessionsToFile() {
+function saveSessionsToFile(sessions) {
   fs.writeFileSync(filePath, JSON.stringify(sessions, null, 2), "utf-8");
 }
 
-// Export both the sessions array and the save function
-export { sessions, generateSessionId, saveSessionsToFile };
+// Generate next session ID based on current data in the file
+function generateSessionId() {
+  const sessions = loadSessionsFromFile();  // Load latest sessions data
+  const nextSessionId = sessions.length > 0 ? sessions[sessions.length - 1].id + 1 : 1;
+  return nextSessionId;
+}
+
+// Export functions
+export { loadSessionsFromFile, saveSessionsToFile, generateSessionId };
